@@ -10,7 +10,7 @@ Measuring robot, which measures the surface area of a room.
 Our robot is able to follow a line and register the distance traveled. This data is then used to calculate the surface area of a room.
 The line the robot follows has to be installed by the user. It only detects the line, if it´s black. Because it can only turn right in 90 degree angle, the robot is only able to measure square and rectangular rooms. The code will be explained later on. 
 
-# Our ides and its development
+# Our ideas and its development
 
 At the beginning our motivation was making measuring a big room easier. The first prototype we have built, consisted of two big wheels, one ball bearing, two motors and two distance sensors. We had one sensor in the front to stop as soon as we reach the wall. We installed the second sensor on the left side to keep a continous distance to the wall. The problem was, that the distance sensor wasn´t precise enough to keep a contious distance to the side.  
 
