@@ -35,9 +35,10 @@ Our design for "Hubbi" was created using BrickLink Studio, a powerful digital bu
 ## Design Considerations
 
 We aimed to create a design that was:
-  > Small and robust – to ensure durability while measuring different room layouts.
-  > Easy to assemble – using standard LEGO Spike Prime components.
-  > Optimized for precise movement – with well-positioned sensors and motors for efficient navigation.
+Small and robust – to ensure durability while measuring different room layouts.
+Easy to assemble – using standard LEGO Spike Prime components.
+Optimized for precise movement – with well-positioned sensors and motors for efficient navigation.
+
 By using BrickLink Studio, we were able to digitally construct the model before building it physically. This helped us visualize the placement of all components, test structural stability, and ensure accessibility for programming and maintenance.
 
 
@@ -109,10 +110,10 @@ With this setup, Hubbi efficiently measures rectangular and square rooms, provid
 During the development of our measuring robot "Hubbi," we gained valuable insights into working with LEGO® Education SPIKE™ Prime components. We learned the importance of precise sensor placement and calibration, especially for the color sensors detecting the black line. The robot's current limitation of only turning right in 90-degree angles taught us about design constraints and sparked ideas for future improvements.
 
 For future iterations of Hubbi, we envision several enhancements:
-  >Implementing a gyroscope for more precise turns and measuring irregular room shapes.
-  >Adding a small LCD screen for real-time feedback on measurements.
-  >Incorporating wireless connectivity for remote control and data transfer.
-  >Exploring ultrasonic sensors to potentially eliminate the need for a pre-taped line.
-  >Integrating basic machine learning to adapt to different floor textures and lighting conditions.
+Implementing a gyroscope for more precise turns and measuring irregular room shapes.
+Adding a small LCD screen for real-time feedback on measurements.
+Incorporating wireless connectivity for remote control and data transfer.
+Exploring ultrasonic sensors to potentially eliminate the need for a pre-taped line.
+Integrating basic machine learning to adapt to different floor textures and lighting conditions.
 
 While our current version of Hubbi successfully measures rectangular rooms, these improvements could transform it into a more versatile and user-friendly device. We're excited about the possibilities and look forward to continuing our journey in robotics and automation.
