@@ -73,7 +73,7 @@ To start your own project, open the Spike App and click on "New Project." Name y
 
 ## Movement and Line Following
 
-First, we programmed Hubbi to detect and follow a black line using color sensors. Two sensors on the front continuously check if the robot is on track. If one sensor no longer detects the black tape, the robot slightly adjusts its course to correct its path.
+First, we programmed "Hubbi" to detect and follow a black line using color sensors. Two sensors on the front continuously check if the robot is on track. If one sensor no longer detects the black tape, the robot slightly adjusts its course to correct its path.
 To move forward, we created a function called "Move Forward", where both motors drive the wheels at a steady speed of 30%. This ensures smooth and controlled movement. We also added a small visual cue on the display to indicate when this function is active.
 
 
