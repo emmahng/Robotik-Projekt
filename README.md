@@ -45,12 +45,11 @@ Gather all necessary components from the LEGO® Spike Prime set.
 
 Follow the digital building instructions provided by us using BrickLink Studios.
 Ensure proper sensor alignment – the color sensors should be positioned correctly to detect the guiding line.
-Check motor connections – for smooth movement and precise turns.
+Check motor connections – for smooth movement and precise turns.  
 Secure all structural elements – to avoid instability while the robot is operating.
+
 ![image](https://github.com/user-attachments/assets/9cc233f3-87e1-400f-b00b-2c90a220b91b)
 ![image](https://github.com/user-attachments/assets/70a4e8ec-d53b-439b-b34a-f79f3a66d3de)
-
-
 
 ## Additional Resources
 We have provided digital building files in .io format from BrickLink Studio, which you can use to view or modify the design.
