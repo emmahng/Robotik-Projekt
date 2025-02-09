@@ -1,6 +1,6 @@
 # Measuring Robot "Hubbi"
 
-![image](https://github.com/emmahng/Robotik-Projekt/blob/main/%22"Hubbi"%22.jpeg)
+![image](https://github.com/emmahng/Robotik-Projekt/blob/main/%22Hubbi%22.jpeg)
 
 
 # What it is
