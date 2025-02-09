@@ -62,73 +62,58 @@ By following these guidelines, you can build a reliable and effective measuring 
 
 To program our measuring robot "Hubbi", we used the LEGO Spike App and its simple programming interface. Don't worry: The app comes with several tutorials and sample projects. So go ahead and try it out for yourself. If you are new to the environment, we recommend the First Steps tutorial to familiarise yourself with the interface and key components.  
 To start your own project, open the Spike App and click on "New Project." Name your project and choose the programming language. For this guide, we used text bricks, which allows for easy drag-and-drop coding.
-![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Overview.jpeg)
+![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Overview.jpeg)  
 
 ## Line Following and Detecting Turns
 
 First, we programmed "Hubbi" to detect and follow a coloured line using color sensors. Two sensors on the front continuously check if the robot is on track. If one sensor no longer detects the line, the robot slightly adjusts its course to correct its path.
 To move forward both motors drive the wheels at a steady speed of 20%. This ensures smooth and controlled movement.  
-Since Hubbi can only turn 90 degrees to the right, we implemented a function that detects a transverse line marking the end of a segment. When the third color sensor detects this line, the robot stops and executes a right turn by rotating one wheel while keeping the other stationary.
-![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Line%20Following%20and%20Turns.jpg)
+Since Hubbi can only turn 90 degrees to the right, we implemented a function that detects a transverse line marking the end of a segment. When the third color sensor detects this line, the robot stops and executes a right turn by rotating one wheel while keeping the other stationary.  
+
+![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Line%20Following%20and%20Turns.jpg)  
 
 ## Measuring the Room
 ### Variables used
 ![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Variablen2.jpeg)
 
-To calculate the surface area, Hubbi tracks the wheel position (in degrees) and stores the traveled distance in the variable "Radumdrehungen". To make the measurement more accurate, we split the wheel position detection into 1/8ths of a full wheel turn, so that every 45° adds 0.125 wheel turns to the "Radumdrehungen" variable.  
+**To calculate the surface area**, Hubbi tracks the wheel position (in degrees) and stores the traveled distance in the variable "Radumdrehungen". To make the measurement more accurate, we split the wheel position detection into 1/8ths of a full wheel turn, so that every 45° adds 0.125 wheel turns to the "Radumdrehungen" variable.  
 After each side of the room the distance (Calculation: "Raddurchmesser" * "Radumdrehungen" * pi) is saved in the variable "Seitenlänge1". "Seitenlänge1" is then saved in "Seitenlänge". Afterwards "Seitenlänge1" and "Radumdrehungen" are set to 0 to measure the next side of the room. Only two sides of the room are necessary to calculate the area of a rectangular room.  
   
 The formula used to calculate the area of the room:  
 "Fläche" = (("Element 1" of "Seitenlänge" + 24) * ("Element 2" of "Seitenlänge" + 10)) / 1000  
 We add the constant 24 to compensate for the length of "Hubbi" from end to the very front.  
 We add the constant 10 to compensate for the distance to the wall.  
+We divide by 1000 to output the area in square meters.  
 
 ![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Measuring.jpg)  
 
-To measure the perimeter of the room "Radumdrehungen(Strecke)" - which is not set to 0 after every turn! - counts the wheel rotations until "Hubbi" detects a blue tape which we defined as "Hubbis" endmark (color can be changed by you).  
+**To measure the perimeter of the room** "Radumdrehungen(Strecke)" - which is not set to 0 after every turn! - counts the wheel rotations until "Hubbi" detects a blue tape which we defined as "Hubbis" endmark (color can be changed by you).  
 
 The formula used for the perimeter of the room is:  
 "Gesamtstrecke" = "Raddurchmesser" * "Radumdrehungen(Strecke)" * pi + 15  
 We add the constant 15 to compensate for the length of "Hubbi".  
 
-![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Radumdrehungen.jpg)
-
-
-
-Each time "Hubbi" completes a full circuit around the room, it multiplies the length and width to determine the total area. The formula used is:
-
-Area = Length × Width
-
-We store the wheel rotations in a variable and convert them into centimeters using a predefined conversion factor. This ensures accurate measurements.
-
-
-## Main Program Structure
-
-Line Following: Moves along the taped outline using two front color sensors.
-Right Turn Detection: Uses a third sensor to detect the transverse line and trigger a 90-degree turn.
-Distance Measurement: Counts wheel rotations and converts them into room dimensions.
-Completion Check: Stops when it detects that it has returned to the starting point.
-
+![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Radumdrehungen.jpg)  
 
 ## Testing and Adjustments
 
-During testing, we fine-tuned the speed, turning angles, and sensor thresholds to improve accuracy. We also ensured that the robot stops precisely at the final position before displaying the calculated area on its screen.
+During testing, we fine-tuned the speed, turning angles, and sensor thresholds to improve accuracy. We also ensured that the robot stops precisely at the final position before displaying the calculated area on its screen.  
 With this setup, Hubbi efficiently measures rectangular and square rooms, providing an automated alternative to manual measurements.
 
 
 # Lessons Learned and Future Work
 
-During the development of our measuring robot "Hubbi," we gained valuable insights into working with LEGO® Education SPIKE™ Prime components. We learned the importance of precise sensor placement and calibration, especially for the color sensors detecting the black line. The robot's current limitation of only turning right in 90-degree angles taught us about design constraints and sparked ideas for future improvements.
+During the development of our measuring robot "Hubbi," we gained valuable insights into working with LEGO® Education SPIKE™ Prime components. We learned the importance of precise sensor placement and calibration, especially for the color sensors detecting the line. The robot's current limitation of only turning right in 90-degree angles taught us about design constraints and sparked ideas for future improvements.  
 
-For future iterations of Hubbi, we envision several enhancements:
-Implementing a gyroscope for more precise turns and measuring irregular room shapes.
-Adding a small LCD screen for real-time feedback on measurements.
-Incorporating wireless connectivity for remote control and data transfer.
-Exploring ultrasonic sensors to potentially eliminate the need for a pre-taped line.
-Integrating basic machine learning to adapt to different floor textures and lighting conditions.
+For future iterations of Hubbi, we envision several enhancements:  
+- Implementing the built-in gyroscope function for more precise turns and measuring irregular room shapes.  
+- Exploring ultrasonic sensors to potentially eliminate the need for a pre-taped line.  
+- Integrating basic machine learning to adapt to different floor textures and lighting conditions.  
 
-While our current version of Hubbi successfully measures rectangular rooms, these improvements could transform it into a more versatile and user-friendly device. We're excited about the possibilities and look forward to continuing our journey in robotics and automation.
+While our current version of Hubbi successfully measures rectangular rooms, these improvements could transform it into a more versatile and user-friendly device. We're excited about the possibilities and look forward to continuing our journey in robotics and automation.  
 
+Your "Hubbi"-Team,  
+(Emma, Ferdinand, Lediona, Luis)
 
 
 
