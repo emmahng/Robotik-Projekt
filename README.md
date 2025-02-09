@@ -30,10 +30,10 @@ The build of "Hubbi" went through trial and error stages. Eventually - through s
 
 ## Design Considerations
 
-We aimed to create a design that was:
-Small and robust – to ensure durability while measuring different room layouts.
-Easy to assemble – using standard LEGO® Spike Prime components.
-Optimized for the given task – with sensors and motors for navigation.
+We aimed to create a design that was:  
+Small and robust – to ensure durability while measuring different room layouts.  
+Easy to assemble – using standard LEGO® Spike Prime components.  
+Optimized for the given task – with sensors and motors for navigation.  
 
 ## Building the Robot
 ![Hubby](https://github.com/emmahng/Robotik-Projekt/blob/main/%22Hubbi%22%20Build%20Process.gif)
