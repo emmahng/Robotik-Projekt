@@ -105,7 +105,7 @@ With this setup, Hubbi efficiently measures rectangular and square rooms, provid
 
 During the development of our measuring robot "Hubbi," we gained valuable insights into working with LEGO® Education SPIKE™ Prime components. We learned the importance of precise sensor placement and calibration, especially for the color sensors detecting the line. The robot's current limitation of only turning right in 90-degree angles taught us about design constraints and sparked ideas for future improvements.  
 
-For future iterations of Hubbi, we envision several enhancements:  
+For future iterations of "Hubbi", we envision several enhancements:  
 - Implementing the built-in gyroscope function for more precise turns and measuring irregular room shapes.  
 - Exploring ultrasonic sensors to potentially eliminate the need for a pre-taped line.  
 - Integrating basic machine learning to adapt to different floor textures and lighting conditions.  
