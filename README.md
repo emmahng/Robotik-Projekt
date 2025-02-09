@@ -10,7 +10,7 @@ The line the robot follows has to be installed by the user. Because of its simpl
 
 # Our ideas and its development
 
-At the beginning our motivation was making measuring a big room easier. The first prototype we have built, consisted of two big wheels, one ball bearing, two motors and two distance sensors. We had one sensor in the front to stop as soon as we reached a wall. The second sensor was installed on the left side of "Hubbi" in order to keep a continous distance to the wall. Unfortunately this version didn't work because of the insufficient precision of the distance sensor. 
+At the beginning our motivation was making measuring a big room easier. The first prototype we have built, consisted of two big wheels, one ball bearing, two motors and two distance sensors. We had one sensor in the front to stop as soon as we reached a wall. The second sensor was installed on the left side of "Hubbi" in order to keep a continous distance to the wall. Unfortunately this version didn't work because of the insufficient precision of the distance sensor.  
 
 ![image](https://github.com/user-attachments/assets/22ca01b9-d8a9-4d6e-97c8-eaeb77d88511)
 
@@ -62,7 +62,7 @@ By following these guidelines, you can build a reliable and effective measuring 
 
 To program our measuring robot "Hubbi", we used the LEGO Spike App and its simple programming interface. Don't worry: The app comes with several tutorials and sample projects. So go ahead and try it out for yourself. If you are new to the environment, we recommend the First Steps tutorial to familiarise yourself with the interface and key components.  
 To start your own project, open the Spike App and click on "New Project." Name your project and choose the programming language. For this guide, we used text bricks, which allows for easy drag-and-drop coding.
-! [image] (https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Overview.jpeg)
+![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Overview.jpeg)
 
 ## Movement and Line Following
 
