@@ -62,6 +62,7 @@ By following these guidelines, you can build a reliable and effective measuring 
 
 To program our measuring robot "Hubbi", we used the LEGO Spike App and its simple programming interface. Don't worry: The app comes with several tutorials and sample projects. So go ahead and try it out for yourself. If you are new to the environment, we recommend the First Steps tutorial to familiarise yourself with the interface and key components.  
 To start your own project, open the Spike App and click on "New Project." Name your project and choose the programming language. For this guide, we used text bricks, which allows for easy drag-and-drop coding.
+! [image] (https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Overview.jpeg)
 
 ## Movement and Line Following
 
