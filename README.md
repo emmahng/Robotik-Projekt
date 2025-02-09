@@ -36,6 +36,8 @@ Easy to assemble – using standard LEGO® Spike Prime components.
 Optimized for the given task – with sensors and motors for navigation.
 
 ## Building the Robot
+![Hubby](https://github.com/emmahng/Robotik-Projekt/blob/main/%22Hubbi%22%20Build%20Process.gif)
+
 To build your own version of Hubbi, follow these steps:
 Gather all necessary components from the LEGO Spike Prime set.
 ![image](https://github.com/user-attachments/assets/efb47114-b4c2-4e37-b8c8-0be303b0abd7)
@@ -48,8 +50,6 @@ Secure all structural elements – to avoid instability while the robot is opera
 ![image](https://github.com/user-attachments/assets/9cc233f3-87e1-400f-b00b-2c90a220b91b)
 ![image](https://github.com/user-attachments/assets/70a4e8ec-d53b-439b-b34a-f79f3a66d3de)
 
-
-![Hubby](https://github.com/emmahng/Robotik-Projekt/blob/main/%22Hubbi%22%20Build%20Process.gif)
 
 
 ## Additional Resources
