@@ -52,9 +52,9 @@ Secure all structural elements – to avoid instability while the robot is opera
 ![image](https://github.com/user-attachments/assets/70a4e8ec-d53b-439b-b34a-f79f3a66d3de)  
 
 ## Additional Resources
-We have provided digital building files in .io format from BrickLink Studio, which you can use to view or modify the design.
+We have provided digital building files from BrickLink Studio, which you can use to view or modify the design ("Hubby BrickLink Studio.io").
 If you prefer, you can also create exploded views of the robot to understand how different parts fit together.
-For further customization, feel free to experiment with different wheel sizes, sensor placements, or frame modifications.
+For further customization, feel free to experiment with different wheel sizes, sensor placements, or frame modifications.  
 By following these guidelines, you can build a reliable and effective measuring robot just like "Hubbi"!
 
 
