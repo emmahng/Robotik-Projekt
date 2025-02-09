@@ -26,7 +26,7 @@ In the following we will guide you through the process of building and programmi
 
 # "Hubbi's" construction
 
-The build of "Hubbi" went through trial and error stages. Eventually - through several iterations - we developed the final design of 'Hubbi'. 
+The build of "Hubbi" went through trial and error stages. Eventually - through several iterations - we developed the final design of "Hubbi". 
 
 ## Design Considerations
 
