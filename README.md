@@ -49,7 +49,7 @@ Secure all structural elements – to avoid instability while the robot is opera
 ![image](https://github.com/user-attachments/assets/70a4e8ec-d53b-439b-b34a-f79f3a66d3de)
 
 
-![Demo] [Hubby_Render_2 Gif.gif]
+![Hubby_Render_2 Gif] (https://github.com/user-attachments/assets/144cf83b-14c7-46db-bfe5-afe610e00eb1.gif)
 
 
 ## Additional Resources
