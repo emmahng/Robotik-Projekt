@@ -43,13 +43,13 @@ Gather all necessary components from the LEGO® Spike Prime set.
 ![image](https://github.com/user-attachments/assets/efb47114-b4c2-4e37-b8c8-0be303b0abd7)
 ![image](https://github.com/user-attachments/assets/4c99fb6f-3e6c-41e5-8b93-99fdb2591dd2)
 
-Follow the digital building instructions provided by us using BrickLink Studios.
-Ensure proper sensor alignment – the color sensors should be positioned correctly to detect the guiding line.
+Follow the digital building instructions provided by us using BrickLink Studios.  
+Ensure proper sensor alignment – the color sensors should be positioned correctly to detect the guiding line.  
 Check motor connections – for smooth movement and precise turns.  
 Secure all structural elements – to avoid instability while the robot is operating.
 
 ![image](https://github.com/user-attachments/assets/9cc233f3-87e1-400f-b00b-2c90a220b91b)
-![image](https://github.com/user-attachments/assets/70a4e8ec-d53b-439b-b34a-f79f3a66d3de)
+![image](https://github.com/user-attachments/assets/70a4e8ec-d53b-439b-b34a-f79f3a66d3de)  
 
 ## Additional Resources
 We have provided digital building files in .io format from BrickLink Studio, which you can use to view or modify the design.
@@ -60,14 +60,13 @@ By following these guidelines, you can build a reliable and effective measuring 
 
 # Programming our measuring robot "Hubbi"
 
-To program our measuring robot "Hubbi", we used the LEGO Spike App and its programming interface. The app provides various tutorials and example projects that are useful for getting started. If you are new to the environment, we recommend the "First Steps" tutorial to familiarize yourself with the interface and key components.
-To start your own project, open the Spike App and click on "New Project." Name your project and choose the programming language. For this guide, we used text bricks, which allow for easy drag-and-drop coding.
-
+To program our measuring robot "Hubbi", we used the LEGO Spike App and its simple programming interface. Don't worry: The app comes with several tutorials and sample projects. So go ahead and try it out for yourself. If you are new to the environment, we recommend the First Steps tutorial to familiarise yourself with the interface and key components.  
+To start your own project, open the Spike App and click on "New Project." Name your project and choose the programming language. For this guide, we used text bricks, which allows for easy drag-and-drop coding.
 
 ## Movement and Line Following
 
-First, we programmed "Hubbi" to detect and follow a black line using color sensors. Two sensors on the front continuously check if the robot is on track. If one sensor no longer detects the black tape, the robot slightly adjusts its course to correct its path.
-To move forward, we created a function called "Move Forward", where both motors drive the wheels at a steady speed of 30%. This ensures smooth and controlled movement. We also added a small visual cue on the display to indicate when this function is active.
+First, we programmed "Hubbi" to detect and follow a coloured line using color sensors. Two sensors on the front continuously check if the robot is on track. If one sensor no longer detects the line, the robot slightly adjusts its course to correct its path.
+To move forward both motors drive the wheels at a steady speed of 20%. This ensures smooth and controlled movement.
 
 
 ## Detecting Turns
@@ -76,8 +75,16 @@ Since Hubbi can only turn 90 degrees to the right, we implemented a function tha
 
 
 ## Measuring the Room
+### Variables used
 
-To calculate the surface area, Hubbi tracks the wheel rotations and stores the traveled distance. Each time it completes a full circuit around the room, it multiplies the length and width to determine the total area. The formula used is:
+
+
+To calculate the surface area, Hubbi tracks the wheel position (in degrees) and stores the traveled distance in the variable "Radumdrehungen". To make the measurement more accurate, we split the wheel position detection into 1/8ths of a full wheel turn, so that every 45° adds 0.125 wheel turns to the "Radumdrehungen" variable. 
+
+
+
+
+Each time "Hubbi" completes a full circuit around the room, it multiplies the length and width to determine the total area. The formula used is:
 
 Area = Length × Width
 
