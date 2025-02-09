@@ -38,8 +38,8 @@ Optimized for the given task – with sensors and motors for navigation.
 ## Building the Robot
 ![Hubby](https://github.com/emmahng/Robotik-Projekt/blob/main/%22Hubbi%22%20Build%20Process.gif)
 
-To build your own version of Hubbi, follow these steps:
-Gather all necessary components from the LEGO Spike Prime set.
+### To build your own version of Hubbi, follow these steps:
+Gather all necessary components from the LEGO® Spike Prime set.
 ![image](https://github.com/user-attachments/assets/efb47114-b4c2-4e37-b8c8-0be303b0abd7)
 ![image](https://github.com/user-attachments/assets/4c99fb6f-3e6c-41e5-8b93-99fdb2591dd2)
 
