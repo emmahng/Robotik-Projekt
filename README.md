@@ -1,6 +1,6 @@
 # Measuring Robot "Hubbi"
 
-![image](https://github.com/user-attachments/assets/895530c3-a123-461f-a578-d2d05290132c)
+![image](https://github.com/emmahng/Robotik-Projekt/blob/main/%22Hubbi%22.heic)
 
 
 # What it is
@@ -69,7 +69,7 @@ To start your own project, open the Spike App and click on "New Project." Name y
 First, we programmed "Hubbi" to detect and follow a coloured line using color sensors. Two sensors on the front continuously check if the robot is on track. If one sensor no longer detects the line, the robot slightly adjusts its course to correct its path.
 To move forward both motors drive the wheels at a steady speed of 20%. This ensures smooth and controlled movement.  
 Since Hubbi can only turn 90 degrees to the right, we implemented a function that detects a transverse line marking the end of a segment. When the third color sensor detects this line, the robot stops and executes a right turn by rotating one wheel while keeping the other stationary.
-![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Line%20Following%20and%20Turns.jpg)
+![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Line%20Following%20and%20Turns.jpg)
 
 ## Measuring the Room
 ### Variables used
@@ -77,16 +77,20 @@ Since Hubbi can only turn 90 degrees to the right, we implemented a function tha
 
 To calculate the surface area, Hubbi tracks the wheel position (in degrees) and stores the traveled distance in the variable "Radumdrehungen". To make the measurement more accurate, we split the wheel position detection into 1/8ths of a full wheel turn, so that every 45° adds 0.125 wheel turns to the "Radumdrehungen" variable.  
 After each side of the room the distance (Calculation: "Raddurchmesser" * "Radumdrehungen" * pi) is saved in the variable "Seitenlänge1". "Seitenlänge1" is then saved in "Seitenlänge". Afterwards "Seitenlänge1" and "Radumdrehungen" are set to 0 to measure the next side of the room. Only two sides of the room are necessary to calculate the area of a rectangular room.  
+  
 The formula used to calculate the area of the room:  
 "Fläche" = (("Element 1" of "Seitenlänge" + 24) * ("Element 2" of "Seitenlänge" + 10)) / 1000  
 We add the constant 24 to compensate for the length of "Hubbi" from end to the very front.  
 We add the constant 10 to compensate for the distance to the wall.  
+
 ![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Measuring.jpg)  
 
 To measure the perimeter of the room "Radumdrehungen(Strecke)" - which is not set to 0 after every turn! - counts the wheel rotations until "Hubbi" detects a blue tape which we defined as "Hubbis" endmark (color can be changed by you).  
+
 The formula used for the perimeter of the room is:  
 "Gesamtstrecke" = "Raddurchmesser" * "Radumdrehungen(Strecke)" * pi + 15  
 We add the constant 15 to compensate for the length of "Hubbi".  
+
 ![image](https://github.com/emmahng/Robotik-Projekt/blob/main/Code%20Radumdrehungen.jpg)
 
 
@@ -128,8 +132,4 @@ While our current version of Hubbi successfully measures rectangular rooms, thes
 
 
 
-
-# Building our measuring robot "Hubbi"
-
-Our design for "Hubbi" was created using BrickLink Studio by Lego® Group (https://www.bricklink.com/v3/studio/download.page). This allowed us to experiment with different designs and ensure that the robot was both compact, sturdy, and functional for its purpose.
 
